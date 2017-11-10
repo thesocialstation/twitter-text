@@ -92,7 +92,7 @@ to work against text that has been auto-linked already.
 
 The main test suite is twitter-text-conformance. Tests are run in your browser, using QUnit.  To run the conformance suite, from the project root, run:
 
-    rake test:conformance
+    npm run test:conformance
 
 Your default browser will open the test suite.  You should open the test suite in your other browsers as you see fit.
 
@@ -100,7 +100,7 @@ Your default browser will open the test suite.  You should open the test suite i
 
 There are a few tests specific to twitter-text-js that are not part of the conformance suite.  To run these, from the project root, run:
 
-    rake test
+    npm test
 
 Your default browser will open the test suite.
 
@@ -108,7 +108,7 @@ Your default browser will open the test suite.
 
 Official versions are kept in the `pkg/` directory.  To roll a new version, (ex. v1.1.0), run the following from project root:
 
-    rake package[1.1.0]
+    npm run dist -- --version 1.1.1
 
 This will make a new file at `pkg/twitter-text-1.1.0.js`.
 

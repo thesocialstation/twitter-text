@@ -249,12 +249,12 @@ tests:
 
     - description: "Count unicode chars outside the basic multilingual plane (double word)"
       text: "\U00010000\U0010ffff"
-      expected: 2
+      expected: 4
 
     - description: "Count unicode chars inside the basic multilingual plane"
       text: "저찀쯿쿿"
-      expected: 4
+      expected: 8
 
     - description: "Count a mix of single byte single word, and double word unicode characters"
       text: "H\U0001f431☺"
-      expected: 3
+      expected: 5
