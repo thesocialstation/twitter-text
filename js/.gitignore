@@ -1,3 +1,4 @@
 test/conformance.js
 .DS_Store
 node_modules/
+twitter-text-dev.js
