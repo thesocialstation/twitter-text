@@ -993,7 +993,8 @@
   };
 
   twttr.txt.getUnicodeTextLength = function(text) {
-    return text.replace(twttr.txt.regexen.non_bmp_code_pairs, ' ').length;
+    //return text.replace(twttr.txt.regexen.non_bmp_code_pairs, ' ').length;
+    return text.length;
   };
 
   twttr.txt.convertUnicodeIndices = function(text, entities, indicesInUTF16) {
