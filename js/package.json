@@ -12,10 +12,37 @@
     "type": "git",
     "url": "https://github.com/twitter/twitter-text-js.git"
   },
+  "scripts": {
+    "test:conformance": "node ./scripts/dev && rake test:conformance",
+    "test": "node ./scripts/dev && rake test",
+    "dist": "node ./scripts/dist"
+  },
   "devDependencies": {
-    "uglify-js": "~2.4.3",
-    "qunitjs": "~1.13.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
     "grunt": "~0.4.2",
-    "grunt-contrib-qunit": "~0.3.0"
+    "grunt-contrib-qunit": "~0.3.0",
+    "minimist": "^1.2.0",
+    "qunitjs": "~1.13.0",
+    "uglify-js": "~2.4.3",
+    "unorm": "^1.4.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "not ie < 11"
+            ]
+          }
+        }
+      ]
+    ]
   }
 }

@@ -1,5 +1,5 @@
 /*!
- * twitter-text-js 1.10.0
+ * twitter-text-js 1.15.0
  *
  * Copyright 2012 Twitter, Inc.
  *
