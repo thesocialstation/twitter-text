@@ -46,7 +46,7 @@ if (!String.prototype.codePointAt) {
 }
 
 // Polyfill for String.prototype.normalize
-const unorm = require('unorm');
+var unorm = require('unorm');
 
 (function() {
   if (typeof twttr === "undefined" || twttr === null) {
